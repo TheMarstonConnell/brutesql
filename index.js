@@ -31,7 +31,7 @@ var BruteSQL = module.exports = function (options) {
             queueLimit: 0
         });
 
-        this.pool.query('CREATE TABLE IF NOT EXISTS brutesql (id varchar(255) NOT NULL UNIQUE, data varchar(255) NOT NULL, expires DATE NOT NULL)', [], (err, result) => {
+        this.pool.query('CREATE TABLE IF NOT EXISTS brutesql (id varchar(255) NOT NULL UNIQUE, data varchar(255) NOT NULL, expires DATETIME NOT NULL)', [], (err, result) => {
             if(err){
                 console.error(err);
                 return;
