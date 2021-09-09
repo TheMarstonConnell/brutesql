@@ -1,0 +1,23 @@
+{
+  "name": "brutesql",
+  "version": "1.0.0",
+  "description": "An express-brute memory store built with mysql",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "brute",
+    "mysql",
+    "sql",
+    "store"
+  ],
+  "author": "Marston Connell",
+  "license": "MIT",
+  "dependencies": {
+    "express-brute": "^1.0.1",
+    "moment": "^2.29.1",
+    "mysql2": "^2.3.0",
+    "underscore": "^1.13.1"
+  }
+}
