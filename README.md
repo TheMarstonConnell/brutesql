@@ -10,7 +10,7 @@ npm install brutesql
 
 ~~~javascript
 const ExpressBrute = require('express-brute');
-const BruteSQL = require('../mysqlbrute');
+const BruteSQL = require('brutesql');
 const bruteStore = new BruteSQL({host: process.env.DB_HOST, user: process.env.DB_USER, pass: process.env.DB_PASS});
 const bruteforce = new ExpressBrute(bruteStore);
 
