@@ -36,8 +36,6 @@ var BruteSQL = module.exports = function (options) {
                 console.error(err);
                 return;
             }
-
-            console.log("BruteSQL initialized...");
         });
     });
 };
@@ -65,9 +63,6 @@ BruteSQL.prototype.set = function (key, value, lifetime, callback) {
 
 BruteSQL.prototype.get = function (key, callback) {
 	key = this.options.prefix+key;
-	
-    console.log("Getting " + key);
-
 
     this.pool.query("SELECT * FROM brutesql WHERE id=?;", [key], (err, result) => {
         if(err){
